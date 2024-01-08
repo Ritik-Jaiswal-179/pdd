@@ -6,7 +6,7 @@ function DiseaseDetectionsubmit() {
             <div className="image">
                 <h3>Image</h3>
             </div>
-
+            
             <div className="desc">
                 <h3>Description</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, eligendi accusantium, voluptates similique dolores reprehenderit dignissimos odit tempora sunt voluptatum ratione explicabo nostrum mollitia, consequuntur omnis quae deserunt. Qui, eveniet.</p>
