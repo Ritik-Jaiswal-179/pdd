@@ -9,6 +9,11 @@ import Feedback from './Components/Feedback/Feedback';
 import CropDetails from './Components/CropRecommendation/CropDetails/CropDetails';
 import ProfilePage from './Components/Profile/Profile';
 
+import Admin from './Components/Admin/Admin';
+import Crops from './Components/Admin/Crops/Crops';
+import Users from './Components/Admin/Users/Users';
+import Userfeedback from './Components/Admin/UserFeedback/Userfeedback';
+
 function App() {
   return (
     <div className="App">
@@ -17,6 +22,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path='/' element={<Home />} ></Route>
+          <Route path='/admin' element={<Admin />} ></Route>
 
           <Route path='/croprecommendation' element={<CropRecommendation />} ></Route>
           <Route path='/cropdetail' element={<CropDetails/>}/>
@@ -27,6 +33,11 @@ function App() {
           <Route path='/Feedback' element={<Feedback />} ></Route>
 
           <Route path='/profile' element={<ProfilePage />} ></Route>
+
+          <Route path='/admin/users' element={<Users />} ></Route>
+          <Route path='/admin/crops' element={<Crops />} ></Route>
+          <Route path='/admin/userfeedback' element={<Userfeedback />} ></Route>
+          <Route path='/admin/profile' element={<Userfeedback />} ></Route>
         </Routes>
       </Router>
     </div>
