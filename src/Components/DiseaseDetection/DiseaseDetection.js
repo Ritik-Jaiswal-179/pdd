@@ -12,6 +12,7 @@ function DiseaseDetection() {
     const fileChosenSpan = document.getElementById('file-chosen');
     fileChosenSpan.textContent = fileName;
   };
+  
   return (
     <div className='dd'>
       <div className="conatainer">
@@ -47,13 +48,16 @@ function DiseaseDetection() {
             </form>
 
           </div>
+
           <div className="dbox mid">
             <h5>Why is it necessary to detect disease in plant ?</h5>
             <p>Plant diseases affect the growth of their respective species. In addition, some research gaps are identified from which to obtain greater transparency for detecting diseases in plants, even before their symptoms appear clearly. diagnosis is one of the most important aspects of a plant pathologist's training. Without proper identification of the disease and the disease-causing agent, disease control measures can be a waste of time and money and can lead to further plant losses. Proper disease diagnosis is necessary.</p>
           </div>
+
           <div className="dbox right">
             <h5>Prevent Plant Disease follow below steps:</h5>
-            <p><b>1</b>. Allow the Soil to Warm Before Planting.<br />
+            <p>
+              <b>1</b>. Allow the Soil to Warm Before Planting.<br />
               <b>2</b>. Fertilize to Keep Your Plants Healthy.<br />
               <b>3</b>. Provide Good Air Circulation.<br />
               <b>4</b>. Follow Good Sanitation Practices.<br />

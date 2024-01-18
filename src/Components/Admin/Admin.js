@@ -1,9 +1,8 @@
 import React from 'react'
 import "./Admin.css"
-import { Link } from 'react-router-dom';
-
+import { Link, useLocation } from 'react-router-dom';
 const Admin = () => {
-    
+    const {state} = useLocation()
 
     return (
         <>
@@ -19,7 +18,7 @@ const Admin = () => {
                 </div>
 
                 <div className="main">
-
+                    
                     <div className="box">
                         <div className="name">
                             Users
@@ -30,14 +29,16 @@ const Admin = () => {
                         </Link>
                     </div>
 
+
                     <div className="box">
                         <div className="name">
                             Crops
                         </div>
-                        <Link className="text" to={{ pathname: '/admin/crops', state: { data: "Crops" } }}>
+                        <Link className="text" to='/admin/crops' state={{data: "Crops"}}>
                             View all --
                         </Link>
                     </div>
+
 
                     <div className="box">
                         <div className="name">

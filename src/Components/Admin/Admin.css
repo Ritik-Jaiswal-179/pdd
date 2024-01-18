@@ -1,15 +1,17 @@
-.adminpage {
+.tableview{
+    justify-content: center;
+    
+}
+.adminpage,.adminsearchpage,.userspage,.userfeedbackpage,.cropspage {
     display: flex;
+    width: 100%;     
 }
 
 .sidebar {
     background-color: rgb(122, 121, 121);
-    ;
-    /* color: white; */
     width: 17%;
     height: 93vh;
     font-size: 30px;
-    /* justify-content:left; */
     text-align: left;
 }
 
@@ -77,15 +79,22 @@
 }
 
 /* ************************* /admin/users ************************/
-.users {
-    padding: 2rem;
+.users,.crops,.feedback {
+
+    width: 83%;
+    padding: 1rem 2rem;
+    /* width: auto; */
+    margin: 10px auto;
+    height: 93vh;
+    overflow-y: auto;
+    justify-content: center;
 }
 
 table {
     border-radius: 100px;
 }
 th,td {
-    width: 200px;
+    /* width: 200px; */
     text-align: left;
 }
 
@@ -98,7 +107,8 @@ table,tr,td,th {
     
 }
 tr td{
-    border: 5px solid #dfd7ca;  
+    border: 2px solid #dfd7ca; 
+  vertical-align: middle; 
 
 }
 
@@ -112,3 +122,23 @@ tr td{
     /* background-color: #f2f2f2; Light gray color for odd rows */
     background-color: red;
   }
+
+
+/* ***************************** /admin/crops *********************************/
+
+
+
+/******************************* adminsearchbar *******************************/
+.adminsearchpage{
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.searchtext{
+    font-weight: 500;
+    font-size: larger;
+    padding-right: 10px;
+}
+.searchinput{
+    border-radius: 5px;
+    outline: none;
+}

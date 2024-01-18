@@ -21,6 +21,7 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
+          
           <Route path='/' element={<Home />} ></Route>
           <Route path='/admin' element={<Admin />} ></Route>
 
@@ -30,7 +31,7 @@ function App() {
           <Route path='/diseasedetection' element={<DiseaseDetection />} ></Route>
           <Route path='/diseasedetectionsubmit' element={<DiseaseDetectionsubmit/>}/>
 
-          <Route path='/Feedback' element={<Feedback />} ></Route>
+          <Route path='/feedback' element={<Feedback />} ></Route>
 
           <Route path='/profile' element={<ProfilePage />} ></Route>
 
@@ -38,6 +39,7 @@ function App() {
           <Route path='/admin/crops' element={<Crops />} ></Route>
           <Route path='/admin/userfeedback' element={<Userfeedback />} ></Route>
           <Route path='/admin/profile' element={<Userfeedback />} ></Route>
+
         </Routes>
       </Router>
     </div>

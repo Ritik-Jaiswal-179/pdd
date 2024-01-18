@@ -4,18 +4,15 @@ import "./CropDetails.css"
 
 function CropDetails() {
   const location = useLocation()
+  // console.log(location.state?.cropdata)
   const cropdata = location.state?.cropdata
-  console.log(JSON.stringify(cropdata))
+  console.log(cropdata)
 
   return (
     <div>
-      {/* <img src={crop.cropI1maUrl} alt={crop.cropName} /> */}
-      {/* <p>{crop.description}</p> */}
+      <img src={cropdata.cropImgUrl} alt="cropdata.cropName" />
       crop details
-      {cropdata && (
-        <pre>{JSON.stringify(cropdata, null, 2)}</pre>
-      )}
-      {/* <h2>{cropdata.cropName}</h2> */}
+      
       
     </div>
 
